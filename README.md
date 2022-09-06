@@ -6,7 +6,7 @@ enter their id# and enter the total amount of time spent with the dog and a gene
 will be prompted to select the dogs who fall under their care.  For each dog entered, The program provides a summary of all entered information for a dog. The program should enforce that only care attendants with the id numbers listed in the chart below can be entered.    
 
 Once the manager is done entering all logs, the program will display a count of total dogs entered, a count of the total number of dogs entered from each 
-color group, along with the total time the care attendant spent with the various dogs. The program also provides you with a summary of the dog with the most care minutes.
+color group, along with the total time the care attendant spent with the various dogs. 
 
 Your program should operate similarly to the program shown in the .gif below
 The .gif below show three iterations of running the program
