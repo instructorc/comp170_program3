@@ -23,8 +23,8 @@ The .gif below show three iterations of running the program
 | 44   | Mya Lynn            |  RED, GREEN    |
 
 
-**** List of dogs currently in care
-| ID # | Dog Name | Dogs in Care                                         |
+#### List of dogs currently in care
+| ID # | Dog Name | Dog Color Group                                         |
 |------|---------------------|------------------------------------------------------|
 | 348   | Badger    | RED      |
 | 301   | Hoosier   | RED      |
@@ -137,7 +137,7 @@ Proper structure used for allowing care attendant to continously enter new dog l
 Input/Output of all necessary information for each dog entry; Program correctly identifies the dogs assigned to each user based on color group; Program restricts the use of the id numbers shown in chart for each care attendant and restricts the use of dog id's shown in chart (Defensive Programming).
 
 ## Requirement 3 (5 Points)
-At the conclusion of all dog log entries, the program provides a tally of 1)Total number of dogs entered 2) Total number of dogs entered by color group and 3) Total time spent with each dog entered
+At the conclusion of all dog log entries, the program provides a tally of 1)Total number of dogs entered 2) Total number of dogs entered by color group and 3) Total time spent with dog(s) in color group.
 
 ## Requirement 4 (5 Points)
 Style - Proper use of comments, spacing, in program; use of descriptive variable names
