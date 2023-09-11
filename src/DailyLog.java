@@ -50,10 +50,10 @@ public class DailyLog {
         System.out.println("");
 
         //OUTPUT OF CARE ATTENDANT INFO.
-        System.out.println("Enter " + 11 + " for Noah Charles");
-        System.out.println("Enter " + 22 + " for Silas Alexander");
-        System.out.println("Enter " + 33 + " for Chris Isaac");
-        System.out.println("Enter " + 44 + " for Mya Lynn");
+        System.out.println("Enter 11 for Noah Charles");
+        System.out.println("Enter 22 for Silas Alexander");
+        System.out.println("Enter 33 for Chris Isaac");
+        System.out.println("Enter 44 for Mya Lynn");
 
         //PRIMER
 
