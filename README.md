@@ -37,94 +37,6 @@ The .gif below show three iterations of running the program
 | 311   | Wolvey    | BLUE     |
 
 
-### Sample output from Video
-```
-Welcome to the MPLS care attendant daily log program.  This program will 
-allow you to enter a care attendant id and produce a log for the dogs under the attendant's care.
-
-Enter 11 for Noah Charles
-Enter 22 for Silas Alexander
-Enter 33 for Chris Isaac
-Enter 44 for Mya Lynn
-To get started, please enter a care attendant's id from the list above
-Enter ID #: 10
-Sorry, Invalid attendant ID #, please enter a valid id.
-Enter ID #: 11
-
-Enter 348 for Badger
-Enter 301 for Hoosier
-Enter 388 for Husker
-Enter 391 for Bucky
-Enter 362 for Nittany
-Enter 311 for Wolvey
-Noah, enter id # from the dogs above:301
-Enter total number of minutes spent with dog: 23
-Enter note about dog: Dog ate well
-Dog Information:
-*********************************
-Attendant ID #: 11
-Dog ID #:       301
-Min. w/Dog:     23.0
-Notes:  Dog ate well
-*********************************
-
-Enter 11 for Noah Charles        
-Enter 22 for Silas Alexander     
-Enter 33 for Chris Isaac
-Enter 44 for Mya Lynn
-Enter another ID # or enter -1 to exit: 22
-
-Enter 325 for Spartan
-Enter 388 for Hawk
-Enter 333 for Gopher
-Silas, enter id # from the dogs above:300
-Sorry, Invalid dog ID, Please enter an applicable dog id number
-Dog id: 325
-Enter total number of minutes spent with dog: 12
-Enter note about dog: Dog played well with others
-Dog Information:
-*********************************
-Attendant ID #: 22
-Dog ID #:       325
-Min. w/Dog:     12.0
-Notes:  Dog played well with others
-*********************************
-
-Enter 11 for Noah Charles
-Enter 22 for Silas Alexander
-Enter 33 for Chris Isaac
-Enter 44 for Mya Lynn
-Enter another ID # or enter -1 to exit: 33
-
-Enter 362 for Nittany
-Enter 311 for Wolvey
-Enter 388 for Hawk
-Enter 333 for Gopher
-Chris, enter id # from the dogs above:333
-Enter total number of minutes spent with dog: 12
-Enter note about dog: Dog was sluggish
-Dog Information:
-*********************************
-Attendant ID #: 33
-Dog ID #:       333
-Min. w/Dog:     12.0
-Notes:  Dog was sluggish
-*********************************
-
-Enter 11 for Noah Charles
-Enter 22 for Silas Alexander
-Enter 33 for Chris Isaac
-Enter 44 for Mya Lynn
-Enter another ID # or enter -1 to exit: -1
-
-Thanks for entering your dog logs
-*************************************
-Total # of log entries: 3
-        Red total count: 1      Red total # of min.: 23
-        Green total count: 1    Green total # of min.: 12
-        Yellow total count: 1   Yellow total # of min.: 12
-        Blue total count: 0     Blue total # of min.: 0
-```
 
 ### Listed below is a list of requirements that need to be completed for your program
 
@@ -140,14 +52,14 @@ Input/Output of all necessary information for each dog entry; Program correctly 
 At the conclusion of all dog log entries, the program provides a tally of 1)Total number of dogs entered 2) Total number of dogs entered by color group and 3) Total time spent with dog(s) in color group.
 
 ## Requirement 4 (5 Points)
-Style - Proper use of comments, spacing, in program; use of descriptive variable names
+Style - Proper use of comments, spacing, in program; use of descriptive variable names, program declares all necessary constant variables, **program must not include break or continue statements for this assignment (deduction of 3 points if presented)**
 
 ## Requirement 5 (5 Points)
-Program is submitted by the due date listed and pushed to assigned GitHub Repository; Repository contains a minimum of three commits.
+Program is submitted by the due date listed and pushed to assigned GitHub Repository; Repository contains a minimum of four commits that shows incremental progression toward completion.
 
 
 ## Submission
-Your project folder will need to be submitted to the assigned GitHub repository provided to you by the instructor. In Sakai, you will need to submit the link to your repository by the due date and time listed in the write-up. Make sure you receive confirmation from Sakai that your assignment has been submitted.
+Your project folder will need to be submitted to the assigned GitHub repository provided to you by the instructor. In Sakai, you will need to submit the link to your repository by the due date and time listed in the write-up. Make sure you receive confirmation from Sakai that your assignment has been submitted.  A video recording is not required for this program.
 
 
 
