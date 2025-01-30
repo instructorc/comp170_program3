@@ -19,7 +19,7 @@ The .gif below show three iterations of running the program
 |------|---------------------|------------------------------------------------------|
 | 11   | Noah Charles        |  BLUE, RED     |
 | 22   | Silas Alexander     |  GREEN, YELLOW |
-| 33    | Chris Isaac        |  BLUE, YELLOW |                               
+| 33   | Chris Isaac        |  BLUE, YELLOW |                               
 | 44   | Mya Lynn            |  RED, GREEN    |
 
 

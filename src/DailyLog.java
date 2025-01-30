@@ -34,7 +34,7 @@ color group, along with the total time the care attendant spent with the various
 | 311   | Wolvey    | BLUE     |
 	
     [REPLACE MY INFORMATION WITH YOURS]
-    Course: COMP 170, Fall 1 2024
+    Course: COMP 170, Spring 1 2025
     System: Visual Studio Code, Windows 10
     Author: C. Fulton
 */
