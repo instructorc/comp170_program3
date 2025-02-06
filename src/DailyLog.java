@@ -36,7 +36,7 @@ color group, along with the total time the care attendant spent with the various
     [REPLACE MY INFORMATION WITH YOURS]
     Course: COMP 170, Spring 1 2025
     System: Visual Studio Code, Windows 10
-    Author: C. Fulton
+    Author: C. F
 */
 public class DailyLog {
     public static void main(String[] args) throws Exception {
