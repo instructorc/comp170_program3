@@ -13,7 +13,7 @@ The .gif below show three iterations of running the program
 
 ![Alt text](https://instructorc.github.io/site/slides/java/images/structures/rendered_output_prog3.gif "Program 3 Execution Example")
 
-**ARRAYS CANNOT BE USED FOR THIS PROGRAM**
+**ARRAYS CANNOT BE USED FOR THIS PROGRAM - The color group assignment is purely to express which attendant will be responsible for each group of dogs.**
 
 | ID # | Care Attendant Name | Assigned Color Group                                        |
 |------|---------------------|------------------------------------------------------|
