@@ -1,5 +1,3 @@
-
-
 /*--------------------------------------------
 Program 3: MPLS care attendant Daily Log
 The MPLS care attendant Daily Dog Log is a program that allows the care attendant manager to  enter daily logs for each Dog in MPLS Dog boarding School.  
@@ -21,7 +19,7 @@ color group, along with the total time the care attendant spent with the various
 
 
 **** List of dogs currently in care
-| ID # | Dog Name | Dogs in Care                                         |
+| ID # | Dog Name | Dogs in Care                                        
 |-------|------------|----------|
 | 348   | Badger    | RED      |
 | 301   | Hoosier   | RED      |
@@ -38,17 +36,19 @@ color group, along with the total time the care attendant spent with the various
     System: Visual Studio Code, Windows 10
     Author: C. F
 */
+
+import java.util.Scanner;
 public class DailyLog {
     public static void main(String[] args) throws Exception {
         
         //DECLARATIONS *Make sure to also consider all variables that will keep tally and initialize to zero
+        Scanner input = new Scanner(System.in);
 
         //WELCOME MESSAGE
         System.out.println("Welcome to the MPLS care attendant daily log program.  This program will allow you to enter a care attendant id and produce a log for the dogs under the attendant's care.");
 
         //Create Space
         System.out.println("");
-
         //OUTPUT OF CARE ATTENDANT INFO.
         System.out.println("Enter 11 for Noah Charles");
         System.out.println("Enter 22 for Silas Alexander");
@@ -56,45 +56,210 @@ public class DailyLog {
         System.out.println("Enter 44 for Mya Lynn");
 
         //PRIMER
+        final int CharlesId = 11;
+        final int AlexanderId = 22;
+        final int IsaacId = 33;
+        final int LynnId = 44;
 
+        int totalDogs = 0;
+        int redDogCount = 0;
+        int greenDogCount = 0;
+        int blueDogCount = 0;
+        int yellowDogCount = 0;
+        int redMinutes = 0;
+        int greenMinutes = 0;
+        int blueMinutes = 0;
+        int yellowMinutes = 0;
+    
 
-        //Enfore that only 11, 22, 33, 44 and sentinel value can be entered
-
+        System.out.println("To get started, please enter the care attendant ID from the list above");
+        System.out.println("Enter -1 at any time to finish entering care attendant logs.");
+        System.out.print("Enter ID #: ");
+        int attendantId = input.nextInt();
 
         //Looping structure that allow for continous iteration and checks against sentinel value
+        while(attendantId != -1 && attendantId != 11 && attendantId != 22 && attendantId != 33 && attendantId != 44) {
+            System.out.println("Invalid ID number. Please enter a valid care attendant ID from the list above.");
+            System.out.print("Enter ID #: ");
+            attendantId = input.nextInt();
+        }
 
+        while (attendantId != -1) {
+            //Determine which dogs to display based on attendant id number 
+            System.out.println("Dogs available for this attendant:");
 
-                //Determine which dogs to display based on attendant id number 
+            boolean showBlue;
+            boolean showRed;
+            boolean showGreen;
+            boolean showYellow;
 
+            //showBlue
+            if(attendantId == CharlesId || attendantId == IsaacId){
+                showBlue = true;
+            }
+            else showBlue = false;
 
-                //Enforce that dog ID is an applicable number according to the chart
+            //showRed
+            if(attendantId == CharlesId || attendantId == LynnId){
+                showRed = true;
+            }
+            else showRed = false;
 
+            //showGreen
+            if(attendantId == AlexanderId || attendantId == LynnId){
+                showGreen = true;
+            }
+            else showGreen = false;
 
-                //Gather rest of information such as total numbers of min. spent with dog and dog note
-
-
-                //Determine color count and total time spent by color
-
-
-                //Increment count for total entries
-
-
-
-                //OUTPUT OF CARE ATTENDANT INFO.
-
-
-                //Reprompt user to enter another user and enforce that only care attendant ID #'s are entered' 
-
-
+            //showYellow
+            if(attendantId == AlexanderId || attendantId == IsaacId){
+                showYellow = true;
+            }
+            else showYellow = false;
         
-                //Enfore that only 11, 22, 33 and 44 can be entered, including sentinel value
+            //Determine which dogs to display based on attendant id number 
+            if (showRed == true) {
+                System.out.println("348 - Badger (RED)");
+                System.out.println("301 - Hoosier (RED)");
+                System.out.println("388 - Husker (RED)");
+                System.out.println("391 - Bucky (RED)");
+            }
+            if (showGreen == true) {
+                System.out.println("325 - Spartan (GREEN)");
+            }
+            if (showYellow == true) {
+                System.out.println("388 - Hawk (YELLOW)");
+                System.out.println("333 - Gopher (YELLOW)");
+            }
+            if (showBlue == true) {
+                System.out.println("362 - Nittany (BLUE)");
+                System.out.println("311 - Wolvey (BLUE)");
+            }
+
+            //Enforce that dog ID is an applicable number according to the chart
+            System.out.print("Enter dog ID #: ");
+            int dogId = input.nextInt();
+
+            boolean validDogId = false;
+
+            if (showRed == true && (dogId == 348 || dogId == 301 || dogId == 388 || dogId == 391)) {
+                validDogId = true;
+            }
+            if (showGreen == true && dogId == 325) {
+                validDogId = true;
+            }
+            if (showYellow == true && (dogId == 388 || dogId == 333)) {
+                validDogId = true;
+            }
+            if (showBlue == true && (dogId == 362 || dogId == 311)) {
+                validDogId = true;
+            }
+
+            while (!validDogId) {
+                System.out.println("Invalid dog ID. Please enter a dog ID from the list above.");
+                System.out.print("Enter dog ID #: ");
+                dogId = input.nextInt();
+
+                validDogId = false;
+
+                if (showRed == true && (dogId == 348 || dogId == 301 || dogId == 388 || dogId == 391)) {
+                    validDogId = true;
+                }
+                if (showGreen == true && dogId == 325) {
+                    validDogId = true;
+                }
+                if (showYellow == true && (dogId == 388 || dogId == 333)) {
+                    validDogId = true;
+                }
+                if (showBlue == true && (dogId == 362 || dogId == 311)) {
+                    validDogId = true;
+                }
+            }
+
+            //Gather rest of information such as total numbers of min. spent with dog and dog note
+            System.out.print("Enter total minutes spent with this dog: ");
+            int dogMinutes = input.nextInt();
+
+            input.nextLine();
+            System.out.print("Enter a short note about the dog's day: ");
+            String dogNote = input.nextLine();
+
+            System.out.println("\n*******************************");
+            System.out.println("Dog Log Summary");
+            System.out.println("Dog ID: " + dogId);
+            System.out.println("Minutes spent: " + dogMinutes);
+            System.out.println("Note: " + dogNote);
+            System.out.println("*********************************");
 
 
+            //Determine color count and total time spent by color
+            String dogColor = "";
 
+            if (showRed == true && (dogId == 348 || dogId == 301 || dogId == 388 || dogId == 391)) {
+                dogColor = "RED";
+            }
+            else if (showGreen == true && dogId == 325) {
+                dogColor = "GREEN";
+            }
+            else if (showYellow == true && (dogId == 388 || dogId == 333)) {
+                dogColor = "YELLOW";
+            }
+            else if (showBlue == true && (dogId == 362 || dogId == 311)) {
+                dogColor = "BLUE";
+            }
+
+            //Increment count for total entries
+            totalDogs++;
+            
+            if (dogColor.equals("RED")) {
+                redDogCount++;
+                redMinutes += dogMinutes;
+            }
+            else if (dogColor.equals("GREEN")) {
+                greenDogCount++;
+                greenMinutes += dogMinutes;
+            }
+            else if (dogColor.equals("BLUE")) {
+                blueDogCount++;
+                blueMinutes += dogMinutes;
+            }
+            else if (dogColor.equals("YELLOW")) {
+                yellowDogCount++;
+                yellowMinutes += dogMinutes;
+            }
+
+            System.out.println();
+            System.out.println("Enter 11 for Noah Charles");
+            System.out.println("Enter 22 for Silas Alexander");
+            System.out.println("Enter 33 for Chris Isaac");
+            System.out.println("Enter 44 for Mya Lynn");
+            System.out.println("\nEnter another attendant ID or -1 to finish.");
+            System.out.print("Enter ID #: ");
+            attendantId = input.nextInt();
+
+            while(attendantId != -1 && attendantId != 11 && attendantId != 22 && attendantId != 33 && attendantId != 44) {
+                System.out.println("Invalid ID number. Please enter a valid care attendant ID from the list above.");
+                System.out.print("Enter ID #: ");
+                attendantId = input.nextInt();
+            }
+        }
+
+        //OUTPUT OF CARE ATTENDANT INFO.
+        System.out.println("\nSummary Report");
+        System.out.println("Total dogs entered: " + totalDogs);
 
         //Output total time and count by color 
-
-
+        System.out.println("RED dogs: " + redDogCount + " | total minutes: " + redMinutes);
+        System.out.println("GREEN dogs: " + greenDogCount + " | total minutes: " + greenMinutes);
+        System.out.println("BLUE dogs: " + blueDogCount + " | total minutes: " + blueMinutes);
+        System.out.println("YELLOW dogs: " + yellowDogCount + " | total minutes: " + yellowMinutes);
 
     }
 }
+
+
+
+
+    
+
+
